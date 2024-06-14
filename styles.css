@@ -1,0 +1,112 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fce4ec; /* Very light pink */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the viewport height */
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Header styles */
+.main-header {
+    font-size: 2.5em;
+    color: #c2185b; /* Dark pink */
+    margin: 0;
+    padding: 20px 100px; /* Add padding to the sides */
+    position: relative;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px; /* Increase margin-top to move it higher */
+}
+
+/* Paragraph styles */
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #e91e63; /* Medium pink */
+    margin: 20px 0;
+    position: relative;
+    margin-top: 30px; /* Increase margin-top to move it higher */
+}
+
+/* Button styles */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f06292; /* Pink */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px; /* Increase margin-top to move it higher */
+}
+
+/* Header pseudo-elements */
+.main-header::before,
+.main-header::after {
+    content: '★';
+    color: #ec407a; /* Light pink */
+    font-size: 2em; /* Increase the font size of the stars */
+    position: absolute;
+    top: 20%; /* Adjust top position */
+    transform: translateY(-50%);
+}
+
+.main-header::before {
+    left: -60px; /* Adjust left position to add space */
+}
+
+.main-header::after {
+    right: -60px; /* Adjust right position to add space */
+}
+
+/* Paragraph pseudo-elements */
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '“';
+    color: #f48fb1; /* Lighter pink */
+    font-size: 2em;
+    position: absolute;
+    top: -20px; /* Adjust top position */
+}
+
+.intro-paragraph::before {
+    left: -20px;
+}
+
+.intro-paragraph::after {
+    content: '”';
+    right: -20px;
+}
+
+/* Button pseudo-elements */
+.cta-button::before,
+.cta-button::after {
+    content: '👉';
+    color: #f8bbd0; /* Very light pink */
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%; /* Position relative to the button */
+    transform: translateY(-50%);
+}
+
+.cta-button::before {
+    left: -25px;
+}
+
+.cta-button::after {
+    right: -25px;
+}
